@@ -45,14 +45,6 @@ export const useMenuItem = (props: MenuItemProps): MenuItemState => {
         setOpen(e, false /*isOpen*/, false /*bubble*/);
       }
 
-<<<<<<< HEAD:packages/experimental/Menu/src/MenuItem/useMenuItem.ts
-        if (isArrowClose || !shouldPersist) {
-          setOpen(e, false /*isOpen*/, !isArrowClose /*bubble*/);
-        }
-      }
-    },
-    [disabled, hasSubmenu, isInSubmenu, onClick, setOpen, shouldPersist],
-=======
       const isArrowClose =
         isKeyPressEvent(e) && ((isRtl && e.nativeEvent.key === 'ArrowRight') || (!isRtl && e.nativeEvent.key === 'ArrowLeft'));
       if (isArrowClose) {
@@ -60,7 +52,6 @@ export const useMenuItem = (props: MenuItemProps): MenuItemState => {
       }
     },
     [disabled, hasSubmenu, onArrowClose, onClick, setOpen, shouldPersist],
->>>>>>> 9277810250a46fc1ab77ecbd70550703a973703e:packages/components/Menu/src/MenuItem/useMenuItem.ts
   );
 
   const pressable = useAsPressable({ ...rest, disabled, onPress: onInvoke });
