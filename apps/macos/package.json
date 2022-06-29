@@ -24,7 +24,7 @@
     "directory": "apps/macos"
   },
   "dependencies": {
-    "@fluentui-react-native/tester": "^0.68.6",
+    "@fluentui-react-native/tester": "^0.69.5",
     "react": "17.0.1",
     "react-native": "^0.66.4",
     "react-native-macos": "^0.66.58",

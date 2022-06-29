@@ -32,11 +32,7 @@
   "license": "MIT",
   "dependencies": {
     "@fluentui-react-native/default-theme": ">=0.13.0 <1.0.0",
-<<<<<<< HEAD
-    "@fluentui-react-native/win32-theme": ">=0.19.1 <1.0.0",
-=======
     "@fluentui-react-native/win32-theme": ">=0.19.2 <1.0.0",
->>>>>>> 9277810250a46fc1ab77ecbd70550703a973703e
     "@uifabricshared/theme-registry": ">=0.7.3 <1.0.0",
     "@uifabricshared/theming-ramp": ">=0.16.11 <1.0.0"
   },
@@ -51,6 +47,6 @@
   },
   "peerDependencies": {
     "react": ">=17.0.1",
-    "react-native": ">=0.64.3"
+    "react-native": ">=0.66.4"
   }
 }

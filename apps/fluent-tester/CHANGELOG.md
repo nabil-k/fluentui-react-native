@@ -1,14 +1,28 @@
 # Change Log - @fluentui-react-native/tester
 
-<<<<<<< HEAD
-This log was last generated on Mon, 27 Jun 2022 16:56:31 GMT and should not be manually modified.
+This log was last generated on Wed, 29 Jun 2022 17:36:04 GMT and should not be manually modified.
 
 <!-- Start content -->
 
-=======
-This log was last generated on Tue, 28 Jun 2022 18:04:00 GMT and should not be manually modified.
+## 0.69.5
 
-<!-- Start content -->
+Wed, 29 Jun 2022 17:36:04 GMT
+
+### Patches
+
+- Add warning that ContextualMenu is deprecated if loaded on win32. (ruaraki@microsoft.com)
+- Bump @fluentui-react-native/experimental-menu-button to v0.3.50
+- Bump @fluentui/react-native to v0.30.4
+
+## 0.69.4
+
+Tue, 28 Jun 2022 22:01:06 GMT
+
+### Patches
+
+- Update package.json version (ruaraki@microsoft.com)
+- Bump @fluentui-react-native/avatar to v1.1.4
+- Bump @fluentui-react-native/menu to v1.0.1
 
 ## 0.69.3
 
@@ -47,7 +61,6 @@ Tue, 28 Jun 2022 00:53:43 GMT
 - New component made with the new component generator (78454019+lyzhan7@users.noreply.github.com)
 - Bump @fluentui-react-native/experimental-shadow to v0.2.0
 
->>>>>>> 9277810250a46fc1ab77ecbd70550703a973703e
 ## 0.68.6
 
 Mon, 27 Jun 2022 16:56:31 GMT

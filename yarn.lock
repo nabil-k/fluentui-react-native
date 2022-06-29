@@ -11397,17 +11397,10 @@ react-native-windows@^0.66.24:
     whatwg-fetch "^3.0.0"
     ws "^6.1.4"
 
-<<<<<<< HEAD
-react-native@^0.66.4:
+react-native@>=0.66.4, react-native@^0.66.4:
   version "0.66.4"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.66.4.tgz#bf89a5fb18bd23046d889fb4de4ea2822a4d7805"
   integrity sha512-9vx5dlSfQlKbbDtr8+xMon6qsmSu7jvjdXWZpEKh3XVKpUidbbODv7048gwVKX8YAel1egeR7hN8vzSeI6ssTw==
-=======
-react-native@>=0.64.3, react-native@^0.64.2, react-native@^0.64.3:
-  version "0.64.3"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.3.tgz#40db6385963b4b17325f9cc86dd19132394b03fc"
-  integrity sha512-2OEU74U0Ek1/WeBzPbg6XDsCfjF/9fhrNX/5TFgEiBKd5mNc9LOZ/OlMmkb7iues/ZZ/oc51SbEfLRQdcW0fVw==
->>>>>>> 9277810250a46fc1ab77ecbd70550703a973703e
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^6.0.0"
