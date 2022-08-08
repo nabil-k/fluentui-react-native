@@ -25,27 +25,17 @@ More examples on the [Test pages for the Switch](../../../apps/fluent-tester/src
 
 Win32:
 
-![Button with text on win32 example](./assets/switch_example_win32.png)
+![Switch with a label called Switch Test and defaultChecked set to false on win32 example](./assets/switch_example_win32.png)
 
 ```tsx
 <Switch defaultChecked={false} label={'Switch Test'}>
 ```
 
-## Variants
-
-### Appearance
-
-The `Button` component has several apparance variants depending on where it's being used:
-
-- The default `Button` is rendered with its default styling indicating a trigger for an action.
-- appearance="primary": The `Button` is styled to emphasize that it represents the primary action.
-- appearance="subtle": The `Button` is styled to blend into its background to become less emphasized.
-
 ## API
 
 ### Slots
 
-The `Switch` component has three slots, or parts. The slots behave as follows:
+The `Switch` component has six slots. The slots behave as follows:
 
 - `root` - The outer container representing the `Switch` itself that wraps everything passed via the `children` prop.
 - `label` - If specified, renders the name of the Switch as text.
@@ -230,7 +220,7 @@ export interface SwitchTokens extends LayoutTokens, FontTokens, IBorderTokens, I
 
 ### States
 
-The following section describes the different states which `Switch` can be in as a result of interaction.
+The following section describes the different states which the `Switch` can be in as a result of interaction.
 
 #### Enabled and Disabled states
 
@@ -244,7 +234,7 @@ A hovered `Switch` changes styling to communicate that the user has placed a cur
 
 #### Focused state
 
-A focused `Switch` changes styling to communicate that the user has placed keyboard focus on it. This styling is usually the same to the one in the hovered state plus extra styling on the outline to indicate keyboard focus has been placed on the component.
+A focused `Switch` changes styling to communicate that the user has placed keyboard focus on it. One aspect of that styling is the addition of a border.
 
 #### Pressed state
 
@@ -254,7 +244,7 @@ A pressed `Switch` changes styling to communicate that the user is currently pre
 
 #### Keyboard interaction
 
-The following is a set of keys that interact with the `Button` component:
+The following is a set of keys that interact with the `Switch` component:
 
 | Key     | Description                                            |
 | ------- | ------------------------------------------------------ |
@@ -265,8 +255,8 @@ It is possible to override key behaviors by specifying `onKeyUp` or `onKeyDown`,
 
 #### Cursor interaction
 
-- Cursor moves onto botton: Should immediately change the styling of the `Switch` so that it appears to be hovered.
-- Cursor moves out of botton: Should immediately remove the hovered styling of the `Switch`.
+- Cursor moves onto the Switch: Should immediately change the styling of the `Switch` so that it appears to be hovered.
+- Cursor moves out of Switch: Should immediately remove the hovered styling of the `Switch`.
 - Mouse click: Should execute the `Switch` and move focus to its target.
 
 #### Touch interaction
