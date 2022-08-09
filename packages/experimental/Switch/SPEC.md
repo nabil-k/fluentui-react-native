@@ -2,7 +2,7 @@
 
 ## Background
 
-The `Switch` component allows users to toggle between two mutually exclusive states,
+The `Switch` component allows users to toggle between two mutually exclusive states.
 
 ## Requirements
 
@@ -10,13 +10,10 @@ If using FURN's theming, the `Switch` requires use of the `ThemeProvider` from `
 
 ## Sample Code
 
-Basic examples:
+Basic example:
 
-```jsx
-<Switch defaultChecked={true} label={'Default Checked True'} />
-<Switch defaultChecked={false} label={'Default Checked False'} />
-<Switch defaultChecked={true} label={'Disabled Default Checked True'} disabled />
-<Switch defaultChecked={false} label={'Disabled Default Checked False'} disabled />
+```tsx
+<Switch defaultChecked={false} label={'Switch Test'}>
 ```
 
 More examples on the [Test pages for the Switch](../../../apps/fluent-tester/src/TestComponents/Switch). Instructions on running the tester app can be found [here](../../../apps/fluent-tester/README.md).
@@ -25,10 +22,13 @@ More examples on the [Test pages for the Switch](../../../apps/fluent-tester/src
 
 Win32:
 
-![Switch with a label called Switch Test and defaultChecked set to false on win32 example](./assets/switch_example_win32.png)
+![Switch with a label called Switch Test and defaultChecked set to false on win32 example](./assets/switch_sample_win32.png)
 
-```tsx
-<Switch defaultChecked={false} label={'Switch Test'}>
+```jsx
+<Switch defaultChecked={true} label={'Default Checked True'} />
+<Switch defaultChecked={false} label={'Default Checked False'} />
+<Switch defaultChecked={true} label={'Disabled Default Checked True'} disabled />
+<Switch defaultChecked={false} label={'Disabled Default Checked False'} disabled />
 ```
 
 ## API
