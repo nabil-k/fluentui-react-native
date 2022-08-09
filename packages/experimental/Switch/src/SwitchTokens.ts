@@ -44,12 +44,12 @@ export const defaultSwitchTokens: TokenSettings<SwitchTokens, Theme> = (t: Theme
     justifyContent: 'flex-end',
     hovered: {
       trackColor: t.colors.compoundBrandBackground1Hover,
-      thumbColor: t.colors.neutralForegroundInvertedLink,
+      thumbColor: t.colors.neutralForegroundInverted,
       borderColor: t.colors.compoundBrandBackground1Hover,
     },
     pressed: {
       trackColor: t.colors.compoundBrandBackground1Pressed,
-      thumbColor: t.colors.neutralForegroundInvertedLink,
+      thumbColor: t.colors.neutralForegroundInverted,
       borderColor: t.colors.compoundBrandBackground1Pressed,
     },
     disabled: {
@@ -60,22 +60,22 @@ export const defaultSwitchTokens: TokenSettings<SwitchTokens, Theme> = (t: Theme
   },
 
   toggleOff: {
-    trackColor: t.colors.neutralForegroundInvertedLink,
+    trackColor: t.colors.neutralForegroundInverted,
     thumbColor: t.colors.neutralStrokeAccessible,
     borderColor: t.colors.neutralStrokeAccessible,
     justifyContent: 'flex-start',
     hovered: {
-      trackColor: t.colors.neutralForegroundInvertedLinkHover,
+      trackColor: t.colors.neutralForegroundInverted,
       thumbColor: t.colors.neutralStrokeAccessibleHover,
       borderColor: t.colors.neutralStrokeAccessibleHover,
     },
     pressed: {
-      trackColor: t.colors.neutralForegroundInvertedLinkPressed,
+      trackColor: t.colors.neutralForegroundInverted,
       thumbColor: t.colors.neutralStrokeAccessiblePressed,
       borderColor: t.colors.neutralStrokeAccessiblePressed,
     },
     disabled: {
-      trackColor: t.colors.neutralBackgroundDisabled,
+      trackColor: t.colors.neutralForegroundInverted,
       thumbColor: t.colors.neutralStrokeDisabled,
       borderColor: t.colors.neutralStrokeDisabled,
     },
