@@ -14,9 +14,9 @@ describe('getCurrentAppearance tests', () => {
     expect(currentAppearance).toBe(fallBackAppearance);
   });
 
-  it('getCurrentAppearance fallback', () => {
-    const currentAppearance = getCurrentAppearance(fallBackAppearance, fallBackAppearance);
-    expect(currentAppearance).toBe(fallBackAppearance);
+  it('getCurrentAppearance appearance', () => {
+    const currentAppearance = getCurrentAppearance('highContrast', fallBackAppearance);
+    expect(currentAppearance).toBe('highContrast');
   });
 
   it('getCurrentAppearance dynamic appearance', () => {
