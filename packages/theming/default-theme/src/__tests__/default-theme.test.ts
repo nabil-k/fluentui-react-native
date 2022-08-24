@@ -37,9 +37,9 @@ const getShadowTokensTable = [
  * Fails due to [Function anonymous] existing in the recipes key of what createDefaultTheme(themeOption) returns.
  * The expect does not expect this to exist [Function anonymous].
  */
-// it.concurrent.each(createDefaultThemeTable)('createDefaultTheme test', async (themeOption: any, theme: any) => {
-//   expect(createDefaultTheme(themeOption)).toBe(theme);
-// });
+it.concurrent.each(createDefaultThemeTable)('createDefaultTheme test', async (themeOption: any, theme: any) => {
+  expect(createDefaultTheme(themeOption)).toBe(theme);
+});
 
 it.concurrent.each(getAliasTokensTable)('getAliasTokens test', async (mode: any, tokens: any) => {
   expect(getAliasTokens(mode)).toBe(tokens);
