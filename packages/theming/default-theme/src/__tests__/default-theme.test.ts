@@ -33,8 +33,8 @@ const getShadowTokensTable = [
   ['highContrast', hcShadowTokens.shadow],
 ];
 
-it.concurrent.each(createDefaultThemeTable)('createDefaultTheme test', async (mode: any, tokens: any) => {
-  expect(createDefaultTheme(mode)).toBe(tokens);
+it.concurrent.each(createDefaultThemeTable)('createDefaultTheme test', async (themeOption: any, theme: any) => {
+  expect(createDefaultTheme(themeOption)).toBe(theme);
 });
 
 it.concurrent.each(getAliasTokensTable)('getAliasTokens test', async (mode: any, tokens: any) => {
