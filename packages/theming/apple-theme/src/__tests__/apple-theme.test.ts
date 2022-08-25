@@ -11,6 +11,7 @@ import macOSLightShadowTokens from '@fluentui-react-native/design-tokens-macos/l
 import macOSDarkShadowTokens from '@fluentui-react-native/design-tokens-macos/dark/tokens-shadow.json';
 import macOSLightHCShadowTokens from '@fluentui-react-native/design-tokens-macos/hclight/tokens-shadow.json';
 import macOSDarkHCShadowTokens from '@fluentui-react-native/design-tokens-macos/hcdark/tokens-shadow.json';
+import { getIsHighContrast, setIsHighContrast } from '../appleHighContrast.macos';
 
 const getMacOsAliasTokensTable = [
   ['light', true, macOSLightHCAliasTokens],
@@ -50,5 +51,12 @@ describe('apple-theme tests', () => {
     } else {
       expect(() => getMacOSShadowTokens(mode, isHighContrast)).toThrow();
     }
+  });
+
+  it('isHighContrastEnabled test', () => {
+    setIsHighContrast(false);
+    expect(getIsHighContrast()).toBe(false);
+    setIsHighContrast(true);
+    expect(getIsHighContrast()).toBe(true);
   });
 });
