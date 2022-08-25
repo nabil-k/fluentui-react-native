@@ -73,7 +73,7 @@ describe('apple-theme tests', () => {
     'createMacOSShadowAliasTokens test',
     async (mode: any, isHighContrast: any, tokens: any) => {
       if (mode !== 'highContrast') {
-        expect(createMacOSShadowAliasTokens(mode, isHighContrast)).toEqual(mapPipelineToTheme(tokens));
+        expect(createMacOSShadowAliasTokens(mode, isHighContrast)).toEqual(mapPipelineToShadow(tokens));
       } else {
         expect(() => createMacOSShadowAliasTokens(mode, isHighContrast)).toThrow();
       }
