@@ -15,9 +15,21 @@
 
 ## Running the App
 
-1. Run `yarn` from the root of the repo
-2. From this directory, simply `yarn windows`
+1. Make sure you have followed the [Getting Started](../../../README.md) instructions to install packages and build the entire FluentUI React Native repository. I.e. from the root of the repo:
 
+```sh
+yarn
+yarn build
+```
+
+2. Then go into the `apps\fluent-tester` folder
+```
+cd apps\fluent-tester
+```
+3. From the directory, simply run `yarn windows`
+```
+yarn windows
+```
 ## Debugging
 
 You can debug native code in Visual Studio. To debug javascript code, you can either use standard web debugging, or you can use [React Native Tools](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native) to debug directly in VS Code. The steps are as follows:
